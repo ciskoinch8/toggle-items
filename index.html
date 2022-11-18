@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Toggle Items</title>
+        <link rel="stylesheet" href="style.css" media="all">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Basculer des elements d'une liste a l'autre</h1>
+
+            <form class="fromulaire" name="formulaire">
+                <table>
+                    <tr>
+                        <td align="center"><b><font size="2">Activités proposées</font></b><br>
+                            <select align=top name="liste1" size=9>
+                                <option value="Planche">Planche à voile</option>
+                                <option value="Plongée">Plongée</option>
+                                <option value="Jet-Ski">Jet-Ski</option>
+                                <option value="Tir à l'arc">Tir à l'arc</option>
+                                <option value="Pétanque">Pétanque</option>
+                                <option value="Bronzette">Bronzette</option>
+                                <option value="natation">natation</option>
+                                <option value="football">football</option>
+                                <option value="basket">basket</option>   
+                            </select>
+                        </td>
+
+                        <td align="center">
+                            <input type="button" value="Ajouter >>>" onclick="Deplacer(this.form.liste1,this.form.liste2)">
+                            <br><br>
+                            <input type="button" value="&lt;&lt;&lt; Enlever" onclick="Deplacer(this.form.liste2,this.form.liste1)">
+                            </td>
+                            <td align="center"><font size="2"><b>Activités retenues</b></font><br>
+                            <select align=top name="liste2" size=9>
+                            </select>
+                            </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <script src="main.js" defer></script>
+    </body>
+</html>
